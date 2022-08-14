@@ -12,6 +12,8 @@ export default function Home() {
       }
     }).then(res => res.json())
     console.log(cards)
+    document.querySelector('#name').value = ''
+    alert('Card created!')
   }
   // send form data to trello
   return (
